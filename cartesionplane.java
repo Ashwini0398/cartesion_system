@@ -3,14 +3,14 @@ public class cartesionplane {
 	{
 		int x1,y1,x2,y2,x3,y3,x4,y4;
 		double length1, length2;
-		x1=2;
-		y1=2;
-		x2=3;
-		y2=3;
-		x3=4;
-		y3=4;
-		x4=5;
-		y4=5;
+		x1=4;
+		y1=5;
+		x2=5;
+		y2=6;
+		x3=7;
+		y3=8;
+		x4=6;
+		y4=3;
 
 		length1 = Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
 		length2 = Math.sqrt(Math.pow(x3-x4,2) + Math.pow(y3-y4,2));
@@ -24,9 +24,13 @@ public class cartesionplane {
 		{
 			System.out.println("both line length are equal");
 		}
+		else if ( length1 > length2 )
+		{
+			System.out.println("length of line 1 is greater");	
+		}
 		else
 		{
-			System.out.println("lines are not equal");	
+			System.out.println(" length of line 2  is greater");
 		}
 
 	}
